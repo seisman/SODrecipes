@@ -1,0 +1,17 @@
+<eventArm>
+    <fdsnEvent>
+        <originTimeRange>
+            <startTime>20100519T00:00:00.001Z</startTime>
+            <endTime>20100520T00:00:00.001Z</endTime>
+        </originTimeRange>
+        <magnitudeRange>
+            <min>5.8</min>
+            <max>8.0</max>
+        </magnitudeRange>
+        <originDepthRange>
+            <unit>KILOMETER</unit>
+            <min>30</min>
+        </originDepthRange>
+    </fdsnEvent>
+    <printlineEventProcess/>
+</eventArm>

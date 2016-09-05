@@ -1,0 +1,8 @@
+<networkArm>
+    <fdsnStation/>
+    <networkCode>II</networkCode>
+    <channelCode>BH?</channelCode>
+    <sacPoleZeroWriter/>
+    <responseWriter/>
+    <printlineChannelProcess/>
+</networkArm>

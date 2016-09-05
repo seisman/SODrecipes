@@ -1,0 +1,32 @@
+<waveformArm>
+    <distanceRange>
+        <unit>DEGREE</unit>
+        <max>110</max>
+    </distanceRange>
+    <phaseRequest>
+        <model>prem</model>
+        <beginPhase>ttp</beginPhase>
+        <beginOffset>
+            <unit>SECOND</unit>
+            <value>-300</value>
+        </beginOffset>
+        <endPhase>PKiKP</endPhase>
+        <endOffset>
+            <unit>SECOND</unit>
+            <value>300</value>
+        </endOffset>
+    </phaseRequest>
+    <fdsnDataSelect/>
+    <breqFastRequest>
+        <name>NAME</name>
+        <inst>NAME OF UNIVERSITY</inst>
+        <mail>MAIL ADDRESS</mail>
+        <email>EMAIL ADDRESS</email>
+        <phone>PHONE NUMBER</phone>
+        <fax>None</fax>
+        <media>FTP</media>
+        <altmedia1>FTP</altmedia1>
+        <altmedia2>FTP</altmedia2>
+        <quality>B</quality>
+    </breqFastRequest>
+</waveformArm>

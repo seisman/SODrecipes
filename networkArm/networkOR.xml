@@ -1,0 +1,9 @@
+<networkArm>
+    <fdsnStation/>
+    <networkOR>
+        <networkCode>AK</networkCode>
+        <networkCode>AZ</networkCode>
+    </networkOR>
+    <channelCode>BHZ</channelCode>
+    <printlineChannelProcess/>
+</networkArm>

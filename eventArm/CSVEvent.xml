@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<sod>
+    <eventArm>
+        <fdsnEvent>
+            <originTimeRange>
+                <startTime>20000101T00:00:00.000Z</startTime>
+                <endTime>20160901T00:00:00.000Z</endTime>
+            </originTimeRange>
+            <magnitudeRange>
+                <min>6.5</min>
+            </magnitudeRange>
+            <originDepthRange>
+                <unit>KILOMETER</unit>
+                <min>0</min>
+            </originDepthRange>
+        </fdsnEvent>
+        <printlineEventProcess/>
+        <CSVEventPrinter>
+            <filename>events.csv</filename>
+        </CSVEventPrinter>
+    </eventArm>
+</sod>

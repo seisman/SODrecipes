@@ -20,6 +20,8 @@
     <someCoverage/>
     <someDataCoverage/>
     <printlineSeismogramProcess/>
+    <collapseOverlaps/>
+    <gapFill><zeroFill/></gapFill>
     <merge/>
     <rMean/>
     <rTrend/>

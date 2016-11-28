@@ -14,4 +14,7 @@
         </originDepthRange>
     </fdsnEvent>
     <printlineEventProcess/>
+    <CSVEventPrinter>
+        <filename>events.csv</filename>
+    </CSVEventPrinter>
 </eventArm>

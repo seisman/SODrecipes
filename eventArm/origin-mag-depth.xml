@@ -1,8 +1,8 @@
 <eventArm>
     <fdsnEvent>
         <originTimeRange>
-            <startTime>20100519T00:00:00.001Z</startTime>
-            <endTime>20100520T00:00:00.001Z</endTime>
+            <startTime>2010-05-19T00:00:00.000Z</startTime>
+            <endTime>2010-05-20T00:00:00.000Z</endTime>
         </originTimeRange>
         <magnitudeRange>
             <min>5.8</min>

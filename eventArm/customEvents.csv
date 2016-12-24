@@ -1,0 +1,7 @@
+time, latitude, longitude, depth, depthUnits, magnitude, magnitudeType, magnitudeContributor, catalog, contributor, name, flinnEngdahlRegion, flinnEngdahlRegionType
+2010-01-03T04:11:39.490Z, -5.297, 145.859, 34000.0, METER, 5.8, mwc, , , , "eastern New Guinea region, Papua New Guinea", 0, 1
+2010-01-05T13:11:42.820Z, -9.05, 157.892, 35000.0, METER, 6.0, mwc, , , , "Solomon Islands", 0, 1
+2010-01-14T14:03:41.150Z, 11.51, 142.082, 37000.0, METER, 5.8, mwc, , , , "south of the Mariana Islands", 0, 1
+2010-01-18T15:40:26.440Z, 13.728, -90.132, 54700.0, METER, 5.9, mwc, , , , "offshore El Salvador", 0, 1
+2010-01-25T22:52:46.510Z, -8.498, -74.466, 146700.0, METER, 5.9, mwb, , , , "central Peru", 0, 1
+2010-01-28T08:04:14.250Z, -23.357, -66.712, 208400.0, METER, 5.9, mwb, , , , "Jujuy, Argentina", 0, 1

@@ -1,0 +1,6 @@
+<eventArm>
+    <CSVEventSource>
+        <filename>customEvents.csv</filename>
+    </CSVEventSource>
+    <printlineEventProcess/>
+</eventArm>

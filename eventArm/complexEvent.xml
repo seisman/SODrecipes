@@ -13,8 +13,26 @@
             <min>30</min>
         </originDepthRange>
     </fdsnEvent>
+
+    <!-- (mag>5 && 100<depth<200) || (mag>6) -->
+    <originOR>
+        <originAND>
+            <magnitudeRange>
+                <min>5</min>
+            </magnitudeRange>
+            <originDepthRange>
+                <unit>KILOMETER</unit>
+                <min>100</min>
+                <max>200</max>
+            </originDepthRange>
+        </originAND>
+        <magnitudeRange>
+            <min>6</min>
+        </magnitudeRange>
+    </originOR>
+
     <printlineEventProcess/>
-    <CSVEventPrinter> <!-- save catalog to csv file -->
+    <CSVEventPrinter>  <!-- save catalog to csv file -->
         <filename>events.csv</filename>
     </CSVEventPrinter>
 </eventArm>

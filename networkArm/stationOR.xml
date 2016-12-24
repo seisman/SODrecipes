@@ -1,12 +1,6 @@
 <networkArm>
     <fdsnStation/>
     <stationOR>
-        <networkOR>
-            <networkCode>1A</networkCode>
-            <networkCode>8B</networkCode>
-            <networkCode>XG02</networkCode>
-            <networkCode>XI98</networkCode>
-        </networkOR>
         <stationAND>
             <networkCode>IU</networkCode>
             <stationCode>TATO</stationCode>

@@ -1,0 +1,11 @@
+<eventArm>
+    <periodicFakeEventSource>
+        <startTime>20010101T00:00:00Z</startTime>
+        <interval>
+            <unit>DAY</unit>
+            <value>1</value>
+        </interval>
+        <numEvents>31</numEvents>
+    </periodicFakeEventSource>
+    <CSVEventPrinter/>
+</eventArm>

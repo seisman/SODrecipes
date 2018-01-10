@@ -54,6 +54,7 @@
             <tHeader>2</tHeader>
             <arrivalIndex>1</arrivalIndex>
         </phaseTimeHeader>
+        <littleEndian/>
     </sacWriter>
     <legacyExecute>
         <command>echo Sod saved this file</command>

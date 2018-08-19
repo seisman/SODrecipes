@@ -5,7 +5,7 @@
 SOD 的配置文件称为 recipe，本项目收集了一些常用的 recipe 片段。
 
 - [英文官方教程](http://www.seis.sc.edu/sod/documentation/tutorials/index.html)
-- [中文入门教程](http://seisman.info/sod-notes.html)
+- [中文入门教程](https://blog.seisman.info/sod-notes/)
 
 ## GenRecipe.py
 

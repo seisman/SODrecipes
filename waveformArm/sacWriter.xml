@@ -1,4 +1,5 @@
 <waveformArm>
+    <bestChannelAtStation/> <!-- Only download the best channel for each station -->
     <distanceRange>
         <unit>DEGREE</unit>
         <max>110</max>

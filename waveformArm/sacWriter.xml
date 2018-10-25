@@ -56,6 +56,13 @@
             <arrivalIndex>1</arrivalIndex>
         </phaseTimeHeader>
         <littleEndian/>
+
+        <!-- Set event depth in km instead of meters -->
+        <sacHeaderScript type="jython">
+            from edu.sc.seis.seisFile.sac import SacConstants
+            h = sac.getHeader()
+            h.evdp = h.evdp/1000
+        </sacHeaderScript>
     </sacWriter>
     <legacyExecute>
         <command>echo Sod saved this file</command>

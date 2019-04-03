@@ -34,7 +34,7 @@ $ python GenRecipe.py -e eventArm/origin-mag-depth.xml -n networkArm/network.xml
 
 ### eventArm
 
-- [origin-mag-depth.xml](eventArm/origin-mag-depth.xml): 基于发震时刻、震级和深度筛选地震事件，并将结果保存到CSV文件中
+- [origin-magnitude-depth-boxarea.xml](eventArm/origin-magnitude-depth-boxarea.xml): 基于发震时刻、位置、震级和深度筛选地震事件，并将结果保存到CSV文件中
 - [complexEvent.xml](eventArm/complexEvent.xml): 利用 `originOR` 和 `originAND` 组合筛选出复杂规则下的地震目录
 - [custom-events-from-csv.xml](eventArm/custom-events-from-csv.xml): 从指定的 [CSV文件](eventArm/customEvents.csv) 中读入事件信息
 - [custom-events.xml](eventArm/custom-events.xml): 直接在 recipe 中指定事件信息

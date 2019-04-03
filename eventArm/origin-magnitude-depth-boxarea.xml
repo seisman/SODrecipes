@@ -1,3 +1,4 @@
+<!-- Limit events based on origin time, magnitude, depth, and location -->
 <eventArm>
     <fdsnEvent> <!-- default use USGS catalog -->
         <originTimeRange>
@@ -11,7 +12,18 @@
         <originDepthRange>
             <unit>KILOMETER</unit>
             <min>30</min>
+            <max>300</max>
         </originDepthRange>
+        <boxArea>
+            <latitudeRange>
+                <min>33.46</min>
+                <max>33.53</max>
+            </latitudeRange>
+            <longitudeRange>
+                <min>-116.82</min>
+                <max>-116.765</max>
+            </longitudeRange>
+        </boxArea>
     </fdsnEvent>
     <printlineEventProcess/>
     <CSVEventPrinter> <!-- save catalog to csv file -->

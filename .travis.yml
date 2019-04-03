@@ -1,0 +1,23 @@
+language: none
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - SOD_VERSION="3.2.8"
+    - SOD_INSTALL_PREFIX="${HOME}/sod-${SOD_VERSION}"
+    - PATH="${PATH}:${SOD_INSTALL_PREFIX}/bin"
+
+install:
+  - wget http://www.seis.sc.edu/downloads/sod/3.2.8/sod-3.2.8.tgz -O - | tar -xz -C ${HOME}
+  - sod --version
+
+script:
+  - cd ci;
+    python makeRecipes.py;
+    for recipe in $(ls *.xml); do
+        echo $recipe;
+        sod -V -f $recipe;
+    done

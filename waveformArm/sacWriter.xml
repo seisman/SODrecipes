@@ -1,9 +1,11 @@
 <waveformArm>
-    <bestChannelAtStation/> <!-- Only download the best channel for each station -->
     <distanceRange>
         <unit>DEGREE</unit>
+        <min>10</min>
         <max>110</max>
     </distanceRange>
+    <bestChannelAtStation/>
+
     <phaseRequest>
         <model>prem</model>
         <beginPhase>ttp</beginPhase>
@@ -17,26 +19,32 @@
             <value>300</value>
         </endOffset>
     </phaseRequest>
+
     <fdsnDataSelect/>
+
     <someCoverage/>
     <someDataCoverage/>
-    <printlineSeismogramProcess/>
     <collapseOverlaps/>
     <gapFill><zeroFill/></gapFill>
     <merge/>
+    <noDataGaps/>
+
     <rMean/>
     <rTrend/>
     <taper/>
+
     <sacWriter/>
 
     <transferResponse>
-        <lowCut>0.01</lowCut>
-        <lowPass>0.05</lowPass>
-        <highPass>20</highPass>
-        <highCut>40</highCut>
+        <lowCut>0.005</lowCut>
+        <lowPass>0.01</lowPass>
+        <highPass>0.25</highPass>
+        <highCut>0.4</highCut>
     </transferResponse>
+
     <sacWriter>
-        <workingDir>processedSeismograms</workingDir>
+        <workingDir>seismograms</workingDir>
+        <location>${event.getTime("yyyyMMddHHmmss")}/${network.code}.${station.code}.${site.code}.${channel.code}.SAC</location>
         <phaseTimeHeader>
             <model>prem</model>
             <phaseName>P</phaseName>
@@ -55,7 +63,6 @@
             <tHeader>2</tHeader>
             <arrivalIndex>1</arrivalIndex>
         </phaseTimeHeader>
-        <littleEndian/>
 
         <!-- Set event depth in km instead of meters -->
         <sacHeaderScript type="jython">
@@ -64,6 +71,7 @@
             h.evdp = h.evdp/1000
         </sacHeaderScript>
     </sacWriter>
+    <printlineSeismogramProcess/>
     <legacyExecute>
         <command>echo Sod saved this file</command>
     </legacyExecute>

@@ -15,7 +15,7 @@ install:
   - sod --version
 
 script:
-  - cd ci;
+  - cd .ci;
     python makeRecipes.py;
     for recipe in $(ls *.xml); do
         echo $recipe;

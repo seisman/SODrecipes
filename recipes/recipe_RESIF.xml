@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<sod>
+
+	<eventArm>
+    	<CSVEventSource>
+ 			<filename>fake_events.csv</filename>
+    	</CSVEventSource>
+    	<printlineEventProcess/>
+	</eventArm>
+
+  	<networkArm>
+        <fdsnStation>
+            <!-- -->
+            <host>ws.resif.fr</host>
+            <!-- -->
+            <networkCode>YA</networkCode>
+            <stationBoxArea>
+                <latitudeRange>
+                    <min>-22</min>
+                    <max>-20</max>
+                </latitudeRange>
+                <longitudeRange>
+                  	<min>54</min>
+                   	<max>56</max>
+                </longitudeRange>
+            </stationBoxArea>
+            <channelCode>HH?</channelCode>
+        </fdsnStation>
+        <!-- -->
+        <channelAND>
+            <channelOR>
+                <channelCode>HHZ</channelCode>
+                <channelCode>HHN</channelCode>
+                <channelCode>HHE</channelCode>
+                <channelCode>HH1</channelCode>
+                <channelCode>HH2</channelCode>
+            </channelOR>
+            <sampling>
+                <min>1</min>
+                <max>100</max>
+                <interval>
+                    <unit>SECOND</unit>
+                    <value>0.01</value>
+                </interval>
+            </sampling> 
+        </channelAND> 
+        <!-- -->
+        <hasResponse/>
+        <hasSensitivity/>
+        <repairSensitivity/>  
+    	<printlineChannelProcess/>
+  	</networkArm>
+
+  	<waveformArm>
+        <bestChannelAtStation/> <!-- Only download the best channel for each station -->
+        <!-- choose the downloaded time window -->
+        <originOffsetRequest> 
+		    <beginOffset>
+		        <unit>MINUTE</unit>
+	            <value>-6</value>
+            </beginOffset>
+            <endOffset>
+                <unit>MINUTE</unit>
+                <value>66</value>
+            </endOffset>
+        </originOffsetRequest>
+        <!-- -->
+        <fdsnDataSelect>
+            <host>ws.resif.fr</host>
+        </fdsnDataSelect>
+        <!-- -->
+        <percentCoverage>90</percentCoverage>
+        <!-- -->
+        <invertFlippedChannels>            
+		    <rMean/>
+		    <rTrend/>
+		    <taper>
+    			<width>.05</width>
+    			<type>HANNING</type>
+		    </taper>
+ 		    <transferResponse>
+    			<lowCut>0.008</lowCut>
+        		<lowPass>0.01</lowPass>
+        		<highPass>20</highPass>
+        		<highCut>22</highCut>
+   		    </transferResponse>
+		    <gapFill>
+	  		    <zeroFill/>
+	  	    </gapFill>
+    		<sacWriter>
+    			<workingDir>SAC</workingDir>
+    		</sacWriter>
+    		<legacyExecute>
+    			<command>echo Sod saved this file</command>
+            </legacyExecute>
+            <printlineSeismogramProcess/>
+        </invertFlippedChannels>
+  	</waveformArm>
+</sod>

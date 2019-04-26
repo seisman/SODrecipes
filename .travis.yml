@@ -7,11 +7,10 @@ branches:
 env:
   global:
     - SOD_VERSION="3.2.8"
-    - SOD_INSTALL_PREFIX="${HOME}/sod-${SOD_VERSION}"
-    - PATH="${PATH}:${SOD_INSTALL_PREFIX}/bin"
+    - PATH="${PATH}:${HOME}/sod-${SOD_VERSION}/bin"
 
 install:
-  - wget http://www.seis.sc.edu/downloads/sod/3.2.8/sod-3.2.8.tgz -O - | tar -xz -C ${HOME}
+  - wget http://www.seis.sc.edu/downloads/sod/${SOD_VERSION}/sod-${SOD_VERSION}.tgz -O - | tar -xz -C ${HOME}
   - sod --version
 
 script:

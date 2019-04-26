@@ -1,6 +1,8 @@
+<!--
+Contributor: Xiaohan Chen, USTC
+-->
 <?xml version="1.0"?>
 <sod>
-
 	<eventArm>
     	<CSVEventSource>
  			<filename>fake_events.csv</filename>
@@ -42,19 +44,19 @@
                     <unit>SECOND</unit>
                     <value>0.01</value>
                 </interval>
-            </sampling> 
-        </channelAND> 
+            </sampling>
+        </channelAND>
         <!-- -->
         <hasResponse/>
         <hasSensitivity/>
-        <repairSensitivity/>  
+        <repairSensitivity/>
     	<printlineChannelProcess/>
   	</networkArm>
 
   	<waveformArm>
         <bestChannelAtStation/> <!-- Only download the best channel for each station -->
         <!-- choose the downloaded time window -->
-        <originOffsetRequest> 
+        <originOffsetRequest>
 		    <beginOffset>
 		        <unit>MINUTE</unit>
 	            <value>-6</value>
@@ -71,7 +73,7 @@
         <!-- -->
         <percentCoverage>90</percentCoverage>
         <!-- -->
-        <invertFlippedChannels>            
+        <invertFlippedChannels>
 		    <rMean/>
 		    <rTrend/>
 		    <taper>

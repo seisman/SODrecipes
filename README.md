@@ -30,4 +30,4 @@ This project collects some common-used recipes.
 - [breqfast.xml](waveformArm/breqfast.xml): Generate requests which can be further used in BREQ_FAST
 - [sacWriter.xml](waveformArm/sacWriter.xml): Request data, basic data processing and save data in SAC format
 
-## Full Recipes
+## Ready-to-use Recipes

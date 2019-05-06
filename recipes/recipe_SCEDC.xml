@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<sod>
+	<eventArm>
+    	<CSVEventSource>
+ 			<filename>fake_events.csv</filename>
+    	</CSVEventSource>
+    	<printlineEventProcess/>
+	</eventArm>
+
+  	<networkArm>
+        <fdsnStation>
+            <host>service.scedc.caltech.edu</host>
+            <networkCode>CI</networkCode>
+            <stationBoxArea>
+                <latitudeRange>
+                    <min>31</min>
+                    <max>40</max>
+                </latitudeRange>
+                <longitudeRange>
+                  	<min>-125</min>
+                   	<max>-112</max>
+                </longitudeRange>
+            </stationBoxArea>
+            <channelCode>BH?</channelCode>
+        </fdsnStation>
+        <channelAND>
+            <channelOR>
+                <channelCode>BHZ</channelCode>
+                <channelCode>BHN</channelCode>
+                <channelCode>BHE</channelCode>
+                <channelCode>BH1</channelCode>
+                <channelCode>BH2</channelCode>
+            </channelOR>
+            <sampling>
+                <min>1</min>
+                <max>40</max>
+                <interval>
+                    <unit>SECOND</unit>
+                    <value>0.025</value>
+                </interval>
+            </sampling>
+        </channelAND>
+        <hasResponse/>
+        <hasSensitivity/>
+        <repairSensitivity/>
+    	<printlineChannelProcess/>
+  	</networkArm>
+
+  	<waveformArm>
+        <bestChannelAtStation/> <!-- Only download the best channel for each station -->
+        <!-- choose the downloaded time window -->
+        <originOffsetRequest>
+		    <beginOffset>
+		        <unit>MINUTE</unit>
+	            <value>-2</value>
+            </beginOffset>
+            <endOffset>
+                <unit>MINUTE</unit>
+                <value>32</value>
+            </endOffset>
+        </originOffsetRequest>
+        <!-- -->
+        <fdsnDataSelect>
+            <host>service.scedc.caltech.edu</host>
+        </fdsnDataSelect>
+        <!-- -->
+        <percentCoverage>90</percentCoverage>
+        <!-- -->
+        <invertFlippedChannels>
+		    <rMean/>
+		    <rTrend/>
+		    <taper>
+    			<width>.05</width>
+    			<type>HANNING</type>
+		    </taper>
+ 		    <transferResponse>
+    			<lowCut>0.008</lowCut>
+        		<lowPass>0.01</lowPass>
+        		<highPass>20</highPass>
+        		<highCut>22</highCut>
+   		    </transferResponse>
+		    <gapFill>
+	  		    <zeroFill/>
+	  	    </gapFill>
+    		<sacWriter>
+    			<workingDir>SAC</workingDir>
+    		</sacWriter>
+    		<legacyExecute>
+    			<command>echo Sod saved this file</command>
+            </legacyExecute>
+            <printlineSeismogramProcess/>
+        </invertFlippedChannels>
+  	</waveformArm>
+</sod>

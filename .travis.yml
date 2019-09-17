@@ -6,7 +6,7 @@ branches:
 
 env:
   global:
-    - SOD_VERSION="3.2.8"
+    - SOD_VERSION="3.2.9"
     - PATH="${PATH}:${HOME}/sod-${SOD_VERSION}/bin"
 
 install:
